@@ -68,11 +68,13 @@ namespace RecrodTest
                 btnRecord.Text = "停止";
                 lbRecordTime.Text = "0";
                 this.ControlBox = false;
+                this.btnOpenRecordFileFold.Visible = false;
             }
             else
             {
                 btnRecord.Text = "开始";
                 this.ControlBox = true;
+                this.btnOpenRecordFileFold.Visible = true;
             }
         }
         private IWaveIn CreateWaveInDevice()
