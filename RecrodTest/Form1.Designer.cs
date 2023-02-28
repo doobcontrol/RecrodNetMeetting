@@ -30,6 +30,7 @@
         {
             this.btnRecord = new System.Windows.Forms.Button();
             this.lbRecordTime = new System.Windows.Forms.Label();
+            this.btnOpenRecordFileFold = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRecord
@@ -51,11 +52,24 @@
             this.lbRecordTime.TabIndex = 1;
             this.lbRecordTime.Text = "label1";
             // 
+            // btnOpenRecordFileFold
+            // 
+            this.btnOpenRecordFileFold.AutoSize = true;
+            this.btnOpenRecordFileFold.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnOpenRecordFileFold.Image = global::RecrodTest.Properties.Resources.FolderOpenLightBlue;
+            this.btnOpenRecordFileFold.Location = new System.Drawing.Point(320, 26);
+            this.btnOpenRecordFileFold.Name = "btnOpenRecordFileFold";
+            this.btnOpenRecordFileFold.Size = new System.Drawing.Size(22, 22);
+            this.btnOpenRecordFileFold.TabIndex = 2;
+            this.btnOpenRecordFileFold.UseVisualStyleBackColor = true;
+            this.btnOpenRecordFileFold.Click += new System.EventHandler(this.btnOpenRecordFileFold_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 48);
+            this.Controls.Add(this.btnOpenRecordFileFold);
             this.Controls.Add(this.lbRecordTime);
             this.Controls.Add(this.btnRecord);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -70,6 +84,7 @@
 
         private System.Windows.Forms.Button btnRecord;
         private System.Windows.Forms.Label lbRecordTime;
+        private System.Windows.Forms.Button btnOpenRecordFileFold;
     }
 }
 
